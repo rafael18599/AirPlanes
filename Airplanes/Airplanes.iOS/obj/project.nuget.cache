@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "NUJ1z9rzvc1toN90au/zdmkhaFo5oxurHWH4OzxC4mmzkzFxehn0Vm9QZqjNqT38YgbizMHxjiAAdIFhwSzA0g==",
+  "dgSpecHash": "X76tI5qGyt1W4JUaHmB9aazJwwGXBfZ6ZbwS76INNxsSd9KNngnjHXBTvb9xZ41V8uP7YmEr/6681qso6OpXNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\sistemas03\\source\\repos\\PlantillasXamarin\\Airplanes\\Airplanes\\Airplanes.iOS\\Airplanes.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sistemas03\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\sistemas03\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\sistemas03\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
   ],
   "logs": []
 }

@@ -125,6 +125,9 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.Forms.PancakeView">
+      <Version>2.3.0.759</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -132,5 +135,41 @@
       <Project>{3CC93AE1-88BA-400D-B34D-A1CD83B724C8}</Project>
       <Name>Airplanes</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tickets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\avion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\equipaje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\proyecto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\aterrizaje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\despegue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pen01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\airplane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ubicacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pen02.png" />
   </ItemGroup>
 </Project>

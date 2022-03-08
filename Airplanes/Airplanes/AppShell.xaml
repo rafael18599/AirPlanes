@@ -1,9 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Airplanes.AppShell">
+             xmlns:local="clr-namespace:Airplanes"
+             x:Class="Airplanes.AppShell"
+             BackgroundColor="Transparent"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarBackgroundColor="WhiteSmoke">
+
     <TabBar>
-        <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Vuelos" Icon="avion.png" Route="Vuelos" ContentTemplate="{DataTemplate local:Vuelos}"/>
+        <ShellContent Title="Boletos" Icon="tickets.png" ContentTemplate="{DataTemplate local:Boletos}" />
+        <ShellContent Title="Trips" Icon="equipaje.png" ContentTemplate="{DataTemplate local:Trips}" />
+        <ShellContent Title="Más" Icon="informacion.png" ContentTemplate="{DataTemplate local:Extras}" />
     </TabBar>
+    
 </Shell>

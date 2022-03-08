@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Airplanes.Vuelos"
+             NavigationPage.HasNavigationBar="False"
+             Title="Vuelos"
+             BackgroundImageSource="proyecto.png"
+             xmlns:PanCake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="135"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Frame Grid.Row="1" Margin="30,0,30,0" >
+                    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" HorizontalOptions="Center">
+                        
+                        <StackLayout Grid.Row="0">
+                            <Grid ColumnDefinitions="*,auto,*">
+                                <Image Source="airplane.png" WidthRequest="45" HorizontalOptions="Start" Grid.Column="0"></Image>
+                                <Label  Text="Paris-Roma" Style="{StaticResource MainAmount}" Grid.Column="1" VerticalTextAlignment="Center"/>
+                                <Image Source="pen02.png" WidthRequest="45" HorizontalOptions="End" Grid.Column="2" ></Image>
+                            </Grid>
+                        </StackLayout>
+                        
+                        <Frame Grid.Row="1" BackgroundColor="#00D2EF" HorizontalOptions="Start" Margin="0,5,0,5" >
+                            <StackLayout>
+                                <Label  Text="Check-In" HorizontalOptions="Center" TextColor="White" FontSize="15" FontAttributes="Bold"/>
+                            </StackLayout>
+                        </Frame>
+                        
+                        <StackLayout Grid.Row="2">
+                            <Grid RowDefinitions="auto,auto" ColumnDefinitions="auto,auto">
+                                <Label  Text="Número de Confirmación: "  Grid.Column="0" Grid.Row="0"/>
+                                <Label  Text="JPCBG8"  Grid.Column="1" Grid.Row="0" FontAttributes="Bold"/>
+                                <Label  Text="Estado del Vuelo: "  Grid.Column="0" Grid.Row="1"/>
+                                <Label  Text="CONFIRMADO"  Grid.Column="1" Grid.Row="1" FontAttributes="Bold"/>
+                            </Grid>
+                        </StackLayout>
+
+                        <Line  Grid.Row="3" Style="{StaticResource DivisionLine}"/>
+                        
+                        <StackLayout Grid.Row="4" Margin="0,15,0,0">
+                            <Grid ColumnDefinitions="auto,auto,auto,auto">
+                                <Image Source="despegue.png" WidthRequest="45" HorizontalOptions="Start" Grid.Column="0"></Image>
+                                <Label  Text="6:45" Style="{StaticResource MainAmount}" Grid.Column="1" VerticalTextAlignment="Center"/>
+                                <Label  Text="PM" Grid.Column="2" VerticalTextAlignment="Start" FontAttributes="Bold" FontSize="15" TranslationY="9"/>
+                                <Label  Text="Lun,Oct 26" Style="{StaticResource MainAmount}" Grid.Column="3" VerticalTextAlignment="Center" Margin="30,0,0,0"/>
+                            </Grid>
+                        </StackLayout>
+                        
+                        <StackLayout Grid.Row="5">
+                            <Grid ColumnDefinitions="auto,auto">
+                                <Image Source="ubicacion.png" WidthRequest="35" HorizontalOptions="Start" Grid.Column="0"></Image>
+                                <Label  Text="ORLY (ORY)" Style="{StaticResource MainAmount}" Grid.Column="1" VerticalTextAlignment="Center" TextColor="#00D2EF" FontSize="18"/>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="6">
+                            <Grid RowDefinitions="auto,auto" ColumnDefinitions="auto,auto">
+                                <Label  Text="Terminal: "  Grid.Column="0" Grid.Row="0"/>
+                                <Label  Text="-"  Grid.Column="1" Grid.Row="0" FontAttributes="Bold"/>
+                                <Label  Text="Puerta: "  Grid.Column="0" Grid.Row="1"/>
+                                <Label  Text="-"  Grid.Column="1" Grid.Row="1" FontAttributes="Bold"/>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout  Grid.Row="7" Margin="0">
+                            <Grid ColumnDefinitions="auto,auto" HorizontalOptions="Center">
+                                <Image Source="clock.png" WidthRequest="20" HorizontalOptions="Start" Grid.Column="0"></Image>
+                                <Label  Text="2h 5m" Style="{StaticResource SecundaryText}" FontSize="18" Grid.Column="1"/>
+                            </Grid>
+                        </StackLayout>
+               
+                        <Line  Grid.Row="8" Style="{StaticResource DivisionLine}" Margin="0"/>
+                        
+                        <StackLayout Grid.Row="9" Margin="0,15,0,0">
+                            <Grid ColumnDefinitions="auto,auto,auto,auto">
+                                <Image Source="aterrizaje.png" WidthRequest="45" HorizontalOptions="Start" Grid.Column="0"></Image>
+                                <Label  Text="8:50" Style="{StaticResource MainAmount}" Grid.Column="1" VerticalTextAlignment="Center"/>
+                                <Label  Text="PM" Grid.Column="2" VerticalTextAlignment="Start" FontAttributes="Bold" FontSize="15" TranslationY="9"/>
+                                <Label  Text="Lun,Oct 26" Style="{StaticResource MainAmount}" Grid.Column="3" VerticalTextAlignment="Center" Margin="30,0,0,0"/>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="10">
+                            <Grid ColumnDefinitions="auto,auto">
+                                <Image Source="ubicacion.png" WidthRequest="35" HorizontalOptions="Start" Grid.Column="0"></Image>
+                                <Label  Text="Adolfo Suarez Barajas (MAD)" Style="{StaticResource MainAmount}" Grid.Column="1" VerticalTextAlignment="Center" TextColor="#00D2EF" FontSize="18"/>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="11">
+                            <Grid RowDefinitions="auto,auto" ColumnDefinitions="auto,auto">
+                                <Label  Text="Terminal: "  Grid.Column="0" Grid.Row="0"/>
+                                <Label  Text="-"  Grid.Column="1" Grid.Row="0" FontAttributes="Bold"/>
+                                <Label  Text="Puerta: "  Grid.Column="0" Grid.Row="1"/>
+                                <Label  Text="-"  Grid.Column="1" Grid.Row="1" FontAttributes="Bold"/>
+                            </Grid>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <Ellipse Grid.Row="1" HorizontalOptions="Start"  TranslationY="-355" TranslationX="20"  Fill="#deded5" VerticalOptions="End" HeightRequest="26" WidthRequest="26" StrokeThickness="0"/>
+                <Ellipse Grid.Row="1" HorizontalOptions="End" TranslationY="-355" TranslationX="-20" Fill="#deded5" VerticalOptions="End" HeightRequest="26" WidthRequest="26" StrokeThickness="0"/>
+                <Ellipse Grid.Row="1" HorizontalOptions="Start"  TranslationY="-150" TranslationX="20"  Fill="#deded5" VerticalOptions="End" HeightRequest="26" WidthRequest="26" StrokeThickness="0"/>
+                <Ellipse Grid.Row="1" HorizontalOptions="End" TranslationY="-150" TranslationX="-20" Fill="#deded5" VerticalOptions="End" HeightRequest="26" WidthRequest="26" StrokeThickness="0"/>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
